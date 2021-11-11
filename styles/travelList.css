@@ -1,0 +1,22 @@
+.travel-list {
+  width: 100%;
+  height: 30px;
+  background: red;
+}
+
+.travel-list .travel-list-city {
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.travel-list .travel-list-date {
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.travel-list .travel-list-separator {
+  border-bottom: 1px solid #eaeaea;
+  width:50px;
+}
