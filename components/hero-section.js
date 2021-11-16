@@ -4,7 +4,7 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Sobre', href: '#' },
+  { name: 'Sobre', href: '/sobre' },
 ]
 
 export default function HeroSection() {
@@ -28,7 +28,7 @@ export default function HeroSection() {
                 <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                   <div className="flex items-center justify-between w-full md:w-auto">
                     <a href="#">
-                      <span className="sr-only">Workflow</span>
+                      <span className="sr-only"></span>
                       <img
                         className="h-8 w-auto sm:h-12"
                         src="https://academydiamond.com.br/wp-content/uploads/2021/05/adesivo-academy1-2048x492.png"
@@ -36,13 +36,13 @@ export default function HeroSection() {
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
                       <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                        <span className="sr-only">Open main menu</span>
+                        <span className="sr-only">Open menu</span>
                         <MenuIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
                     </div>
                   </div>
                 </div>
-                <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                {/* <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                   {navigation.map((item) => (
                     <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
                       {item.name}
@@ -51,7 +51,7 @@ export default function HeroSection() {
                   <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
                     Log in
                   </a>
-                </div>
+                </div> */}
               </nav>
             </div>
 
@@ -79,12 +79,12 @@ export default function HeroSection() {
                     </div>
                     <div className="-mr-2">
                       <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                        <span className="sr-only">Close main menu</span>
+                        <span className="sr-only">Close menu</span>
                         <XIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
                     </div>
                   </div>
-                  <div className="px-2 pt-2 pb-3 space-y-1">
+                  {/* <div className="px-2 pt-2 pb-3 space-y-1">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -94,7 +94,7 @@ export default function HeroSection() {
                         {item.name}
                       </a>
                     ))}
-                  </div>
+                  </div> */}
                   <a
                     href="#"
                     className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
@@ -108,9 +108,9 @@ export default function HeroSection() {
 
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-36 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left content-center">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+              <h1 className="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Demos a largada em nossa</span>{' '}
-                <span className="block text-indigo-600 xl:inline">TURNÊ pelo Brasil</span>
+                <span className="block text-indigo-600 xl:inline font-extrabold leading-4">TURNÊ pelo Brasil</span>
               </h1>
               {/* <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
@@ -119,20 +119,20 @@ export default function HeroSection() {
               <div className="mt-20 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href="#"
+                    href="/sobre"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                   >
                     Conheça mais
                   </a>
                 </div>
-                <div className="mt-3 sm:mt-0 sm:ml-3">
+                {/* <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     href="#"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   >
                     Intinerario
                   </a>
-                </div>
+                </div> */}
               </div>
               <div className="lg:h-40"></div>
             </div>
