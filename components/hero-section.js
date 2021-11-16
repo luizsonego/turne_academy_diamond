@@ -2,6 +2,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
 
 const navigation = [
   { name: 'Sobre', href: '/sobre' },
@@ -27,13 +28,15 @@ export default function HeroSection() {
               <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                 <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                   <div className="flex items-center justify-between w-full md:w-auto">
-                    <a href="#">
-                      <span className="sr-only"></span>
-                      <img
-                        className="h-8 w-auto sm:h-12"
-                        src="https://academydiamond.com.br/wp-content/uploads/2021/05/adesivo-academy1-2048x492.png"
-                      />
-                    </a>
+                    <Link href="#">
+                      <a>
+                        <span className="sr-only"></span>
+                        <img
+                          className="h-8 w-auto sm:h-12"
+                          src="https://academydiamond.com.br/wp-content/uploads/2021/05/adesivo-academy1-2048x492.png"
+                        />
+                      </a>
+                    </Link>
                     <div className="-mr-2 flex items-center md:hidden">
                       <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                         <span className="sr-only">Open menu</span>
@@ -95,12 +98,13 @@ export default function HeroSection() {
                       </a>
                     ))}
                   </div> */}
-                  <a
-                    href="#"
-                    className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
-                  >
-                    Log in
-                  </a>
+                  <Link href="#">
+                    <a
+                      className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
+                    >
+                      Log in
+                    </a>
+                  </Link>
                 </div>
               </Popover.Panel>
             </Transition>
@@ -118,12 +122,13 @@ export default function HeroSection() {
               </p> */}
               <div className="mt-20 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
+                <Link href="/sobre">
                   <a
-                    href="/sobre"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                   >
                     Conheça mais
                   </a>
+                  </Link>
                 </div>
                 {/* <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
